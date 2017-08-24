@@ -26,16 +26,15 @@ int main()
   // rewinding
   for( int i=0;p.gett()>-10; i++ ){
 //     printf( "%f %f %f %f %f %f\n",
-// 	    p.r.x, p.r.y, p.r.z,
-// 	    p.v.x, p.v.y, p.v.z );
-    p.rk4(-0.2); // nonrelativistic motion
+//          p.r.x, p.r.y, p.r.z,
+//          p.v.x, p.v.y, p.v.z );
+    p.rk6(-0.2); // nonrelativistic motion
   }
   // marching in time
   for( int i=0;p.gett()<50; i++ ){
     printf( "%f %f %f %f %f %f\n",
-	    p.r.x, p.r.y, p.r.z,
-	    p.v.x, p.v.y, p.v.z );
-    p.rk4(0.2); // nonrelativistic motion
+            p.r.x, p.r.y, p.r.z, p.v.x, p.v.y, p.v.z );
+    p.rk6(0.2); // nonrelativistic motion
   }
 
   return 0;

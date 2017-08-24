@@ -26,13 +26,13 @@
 
 // *** Notice ***
 //
-//   vector3.h is required for vector operation.
+//   vector3.h is required for vector operations.
 //   RK.h      is required for advancing particles.
 //
 //   external force function,
 //      vector3 F( const vector3& _r, const vector3& _v,
 //                 const  double& _t, const  double&  q  );
-//      must be defined in your program.
+//      should be defined in your program.
 
 
 #ifndef _Z_PARTICLE_H_

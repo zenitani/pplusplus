@@ -1,5 +1,5 @@
 //  -*- C++ -*-
-//  3-dimensional vector class                last updated : 2003/04/18
+//  3-dimensional vector class                last updated : 2017/08/24
 
 
 //
@@ -22,14 +22,7 @@
 // 1998/09/05  Ver 0.1   project started
 // 1999/03/10  Ver 1.0   stable release
 // 2000/03/06      1.1   relativistic functions
-//                       iostream support (Thanks to S. Nakano)
 // 
-
-// *** Notice ***
-//
-//  To use stream operators ( '<<' for ostream and '>>' for istream ),
-//  we need to include <iostream> or <iostream.h> BEFORE <vector3.h>.
-//
 
 
 #ifndef _Z_VECTOR3_H_
