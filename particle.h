@@ -250,7 +250,7 @@ void particle::RK4( const double& h )
 
   // k1
   kr[0] = v.uv2v();
-  kv[0] = m_inv * F( r,v,t, q );
+  kv[0] = m_inv * F( r,v.uv2v(),t, q );
 
   // k2 ... k4
   for( i=0; i<3; i++ ){
@@ -261,7 +261,7 @@ void particle::RK4( const double& h )
       tmpv += st44[i][j] * kv[j];
     }
     kr[i+1] = ( v+tmpv*h ).uv2v();
-    kv[i+1] = m_inv * F( r+tmpr*h,v+tmpv*h,t+st44[i][3]*h, q );
+    kv[i+1] = m_inv * F( r+tmpr*h,(v+tmpv*h).uv2v(),t+st44[i][3]*h, q );
   }
 
   tmpr = st44[3][0] * kr[0];
@@ -286,7 +286,7 @@ void particle::RK6( const double& h )
 
   // k1
   kr[0] = v.uv2v();
-  kv[0] = m_inv * F( r,v,t, q );
+  kv[0] = m_inv * F( r,v.uv2v(),t, q );
 
   // k2 ... k7
   for( i=0; i<6; i++ ){
@@ -297,7 +297,7 @@ void particle::RK6( const double& h )
       tmpv += st76[i][j] * kv[j];
     }
     kr[i+1] = ( v+tmpv*h ).uv2v();
-    kv[i+1] = m_inv * F( r+tmpr*h,v+tmpv*h,t+st76[i][6]*h, q );
+    kv[i+1] = m_inv * F( r+tmpr*h,(v+tmpv*h).uv2v(),t+st76[i][6]*h, q );
   }
   
   tmpr = st76[6][0] * kr[0];
