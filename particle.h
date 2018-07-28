@@ -1,13 +1,9 @@
 //  -*- C++ -*-
-//  electromagnetic test particle code         last updated : 2001/09/27
+//  electromagnetic test particle code         last updated : 2018/07/28
 
 //
-//  Copyright (C) 1998-2001
-//             Seiji Zenitani <zenitani@space.eps.s.u-tokyo.ac.jp>
-//
-//  Solar Terrestrial Physics Group, Department of Geophysics,
-//  Graduate School of Science, University of Tokyo
-//  7-3-1, Hongo, Bunkyo-ku, Tokyo, 113-0033, JAPAN
+//  Copyright (C) 1998-2001, 2018
+//             Seiji Zenitani <zenitani@gmail.com>
 //
 //  You may copy, use, modify and redistribute this code
 //  for ANY PURPOSE, without significant change, as long as
